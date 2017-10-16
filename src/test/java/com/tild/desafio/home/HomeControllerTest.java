@@ -26,7 +26,7 @@ public class HomeControllerTest {
     public void index() throws Exception {
         mvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andDo(print())
+                //.andDo(print())
                 .andExpect(content()
                         .string(containsString("A Sample Blog")));
 
